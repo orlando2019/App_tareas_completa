@@ -6,8 +6,9 @@ const path = require('path');
 const app = express();
 
 //Configuraciones
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
+/* Aqui configuramos el archivo inicial y tipo de archivo para Handlebars */
 app.engine(
 	'.hbs',
 	exphbs({
